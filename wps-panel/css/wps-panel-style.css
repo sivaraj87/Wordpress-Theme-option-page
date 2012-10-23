@@ -1,0 +1,118 @@
+/* 
+    In the wps-panel-style.css 
+    Just the background will be visible.
+*/
+/* ---------------------------------------------------------- 
+                    Layout Styling
+------------------------------------------------------------*/
+#wps-panel { margin-top:30px; margin-right:20px; }
+     
+    #wps-panel-sidebar { float:right; width:150px; }
+        #wps-panel-sidebar ul, #wps-panel-sidebar li { list-style-type:none; margin:0; padding:0; }
+        #wps-panel-sidebar ul { background:#666; border:1px solid #555; border-bottom:0; }
+            #wps-panel-sidebar a { display:block; font-size:11px; padding:8px 10px; border-bottom:1px solid #555; text-decoration:none; color:#fff; text-shadow:1px 0 0 #222; font-weight:bold; }
+            #wps-panel-sidebar a:hover { background:#555; color:#fff; }
+            #wps-panel-sidebar a.wps-panel-active { background:#555; color:#fff; }
+     
+    #wps-panel-content { overflow:hidden; padding:10px; border-top:2px solid #555; }
+        #wps-panel-content, #wps-panel-content p { font-size:12px; color:#666; }
+        .wps-panel-section { display:none; }
+        .wps-panel-section.wps-panel-active { display:block;}
+        
+/* ---------------------------------------------------------- 
+                     Fields Styling 
+------------------------------------------------------------*/
+#wps-panel-content .wps-panel-field { margin-bottom:15px; padding-bottom:15px; border-bottom:1px solid #000; display:block; width:400px; }
+    #wps-panel-content .wps-panel-field .open{padding:0 20px; opacity:0; height:0; -webkit-transition:all 1s;  -moz-transition:all 1s; -o-transition:all 1s; transition:all 1s;}
+    #wps-panel-content .wps-panel-field:hover  .open{opacity:1; min-height:200px;}
+    #wps-panel-content .label {  font-weight:bold; color:#fff; font-size:12px; margin-bottom:5px;  width:400px; display:block; text-align:center; padding:5px 0;background: #45484d; /* Old browsers */
+								
+     }
+    #wps-panel-content .wps-panel-description { font-style:italic; font-family:"Georgia"; margin-bottom:5px; color:#777; text-shadow:1px 0 0 #fff; margin-right:15px;}
+        #wps-panel-content input[type=text], #wps-panel-content textarea, #wps-panel-content option, #wps-panel-select { border:1px solid #ddd; margin-right:15px; color:#666; font-size:11px; background:#fff; border-radius:0; -moz-border-radius:0; -webkit-border-radius:0;  }
+        #wps-panel-content input[type=text], #wps-panel-content textarea { padding:5px; }
+        #wps-panel-content input[type=text] { width:270px; }
+        #wps-panel-content textarea { width:350px; height:100px; }
+        
+
+/* ---------------------------------------------------------- 
+                     onoff switch
+------------------------------------------------------------*/
+
+.onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    width: 200%; margin-right: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner > div {
+    float: right; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.onoffswitch-inner .onoffswitch-active {
+    padding-right: 10px;
+    background-color: #2FCCFF; color: #FFFFFF;
+}
+.onoffswitch-inner .onoffswitch-inactive {
+    padding-left: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: left;
+}
+.onoffswitch-switch {
+    width: 18px; margin: 6px;
+    background: #FFFFFF;
+    border: 2px solid #999999; border-radius: 20px;
+    position: absolute; top: 0; bottom: 0; left: 56px;
+    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-right: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    left: 0px; 
+}
+
+/* ---------------------------------------------------------- 
+                    buttns
+------------------------------------------------------------*/
+.btn {
+	-moz-box-shadow:inset 0px -27px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px -27px 0px 0px #ffffff;
+	box-shadow:inset 0px -27px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6) );
+	background:-moz-linear-gradient( center top, #ffffff 5%, #f6f6f6 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6');
+	background-color:#ffffff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#666666;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 6px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}.btn:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff) );
+	background:-moz-linear-gradient( center top, #f6f6f6 5%, #ffffff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff');
+	background-color:#f6f6f6;
+}.btn:active {
+	position:relative;
+	top:1px;
+}
